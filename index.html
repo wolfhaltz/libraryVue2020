@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="index.css" />
         <link
             type="text/css"
             rel="stylesheet"
@@ -21,8 +22,11 @@
         <div id="app">
             <div class="container">
                 <div class="row mx-auto">
-                    <p class="header-title">{{ headerText.title }}</p>
-                    <p class="header-description">{{ header.description }}</p>
+                    <div class="col-md-12">
+                        <p class="header-title">{{ headerText.title }}</p>
+                        <div class="col-6"><p class="header-description">{{ headerText.description }}</p></div>
+                    </div>
+
                 </div>
             </div>
 
@@ -37,9 +41,7 @@
                 data: {
                     headerText: {
                         title: 'Welcome!',
-                        description: 'I did this repository to study Vue.js, hope it can be helpful to you :)
-                                    <br>All the pages are listed down below:
-                                    '
+                        description: 'I did this repository to study Vue.js, hope it can be helpful to you :) All the pages are listed down below:'
                     }
                 }
             })
