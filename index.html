@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue.js</title>
+        <!-- META CONTENT -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSS -->
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+        />
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"
+        />
+    </head>
+    <body>
+        <div id="app">
+            <div class="container">
+                <div class="row mx-auto">
+                    <p class="header-title">{{ headerText.title }}</p>
+                    <p class="header-description">{{ header.description }}</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    headerText: {
+                        title: 'Welcome!',
+                        description: 'I did this repository to study Vue.js, hope it can be helpful to you :)
+                                    <br>All the pages are listed down below:
+                                    '
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
